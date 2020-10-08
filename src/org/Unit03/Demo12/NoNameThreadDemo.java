@@ -2,8 +2,8 @@ package org.Unit03.Demo12;
 
 /**
  * 使用匿名内部类创建线程。
- * @ Author: Z.HAN
- * @ Date: 2020/9/27 16:30
+ * @Author: Z.HAN
+ * @Date: 2020/9/27 16:30
  */
 public class NoNameThreadDemo {
     public static void main(String[] args) {
