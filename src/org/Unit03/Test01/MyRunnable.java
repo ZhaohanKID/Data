@@ -1,9 +1,9 @@
 package org.Unit03.Test01;
 
 
-public class MyThread2 implements Runnable {
-    static int tickets = 50;
-    static Object object = new Object();
+public class MyRunnable implements Runnable {
+    private int tickets = 50;
+    private Object object = new Object();
     @Override
     public void run() {
 

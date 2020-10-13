@@ -24,11 +24,11 @@ public class SetStudent implements Runnable {
 
                 // 没有数据，生产数据，唤醒生产者。
                 if (x % 2 == 0) {
-                    s.name = "William";
-                    s.age = 34;
+                    s.name = "Bob";
+                    s.age = 3;
                 } else {
-                    s.name = "Andy";
-                    s.age = 50;
+                    s.name = "Jack";
+                    s.age = 5;
                 }
                 x++;
                 s.flag = false;

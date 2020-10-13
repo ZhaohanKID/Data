@@ -22,10 +22,14 @@ public class MyThreadDemo {
 
         MyThread myThread1 = new MyThread("线程二：");
         myThread1.start();
+        /*MyThread myThread = new MyThread();
+        myThread.start();*/
 
 
 
         // 获取主线程 (主方法线程对象。)
+        String name = Thread.currentThread().getName();
+        System.out.println(name);
         System.out.println(Thread.currentThread().getName());
     }
 }

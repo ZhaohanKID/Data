@@ -8,7 +8,7 @@ package org.Unit03.Test01;
  *      根据现实情况，每次售票时，会出现重复售票的情况，而且会出现负数票。
  */
 
-public class MyThreadDemo {
+public class MyRunnableDemo {
     public static void main(String[] args) {
         /*MyThread myThread1 = new MyThread();
         MyThread myThread2 = new MyThread();
@@ -23,11 +23,11 @@ public class MyThreadDemo {
         myThread3.start();*/
 
         // 方法二：
-        MyThread2 myThread = new MyThread2();
+        MyRunnable mr = new MyRunnable();
 
-        Thread t1 = new Thread(myThread, "窗口一：");
-        Thread t2 = new Thread(myThread, "窗口二：");
-        Thread t3 = new Thread(myThread, "窗口三：");
+        Thread t1 = new Thread(mr, "窗口一：");
+        Thread t2 = new Thread(mr, "窗口二：");
+        Thread t3 = new Thread(mr, "窗口三：");
 
         t1.start();
         t2.start();

@@ -3,7 +3,7 @@ package org.Unit03.Demo03;
 public class MyThread3 extends Thread {
     @Override
     public void run() {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

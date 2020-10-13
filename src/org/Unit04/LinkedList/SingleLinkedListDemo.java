@@ -222,7 +222,7 @@ class SingleLinkedList {
         HeroNode next = null;
         HeroNode reverseHead = new HeroNode(0, "", "");
         // 遍历原来的链表，没遍历一个，就将其取出
-        if (current != null) {// 等于null就是遍历到结尾了
+        while (current != null) {// 等于null就是遍历到结尾了
             next = current.next;
             current.next = reverseHead.next;// 将current的下一个节点指向新的节点的最前端。????????此话怎讲？？？？？
             reverseHead.next = current;
