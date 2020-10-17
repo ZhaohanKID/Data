@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.util.Collections;
 
 /**
  * 客户端：Socket，该类是一个客户端套接字

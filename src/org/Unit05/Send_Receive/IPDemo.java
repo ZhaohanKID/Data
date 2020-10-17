@@ -16,5 +16,6 @@ public class IPDemo {
         String ip = address.getHostAddress();
 
         System.out.println(name + "----" + ip);
+        // DESKTOP-9KSQ2RU----169.254.185.155
     }
 }
