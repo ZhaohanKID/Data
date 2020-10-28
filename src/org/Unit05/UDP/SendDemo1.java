@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.*;
 
 /**
- *  通过 UDP 发送数据
+ *  通过 UDP 发送数据：UDP不需要建立连接，所以要将数据打包
  * @Author: Z.HAN
  * @Date: 2020/10/17 16:08
  */

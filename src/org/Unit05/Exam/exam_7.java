@@ -16,24 +16,24 @@ public class exam_7 {
     }
 }
 class Solve {
-    List<List<Integer>> res = new ArrayList<List<Integer>>();
 
     public List<List<Integer>> sum(int[] candidates, int target) {
-        List<List<Integer>> lists = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        backtrack(candidates, target, list);
+        List<List<Integer>> lists = new ArrayList();
+        List<Integer> list = new ArrayList();
+        backTracking(candidates, 0, target, lists, list);
         return lists;
     }
-    public void backtrack(int[] candidates, int target, List<Integer> list) {
+
+    public void backTracking(int[] candidates, int start, int target, List<List<Integer>> lists, List<Integer> list) {
         if (target == 0) {
-            res.add(new ArrayList<>(list));
+            lists.add(new ArrayList(list));
             return;
-        } else if (target < 0){
+        } else if (target < 0) {
             return;
         }
-        for (int i = 0; i < candidates.length; i++) {
+        for (int i = start; i < candidates.length; i++) {
             list.add(candidates[i]);
-            backtrack(candidates, target - candidates[i], list);
+            backTracking(candidates, i, target - candidates[i], lists, list);
             list.remove(list.size() - 1);
         }
     }

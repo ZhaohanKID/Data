@@ -10,7 +10,7 @@ import java.net.DatagramSocket;
 public class ChatDemo {
     public static void main(String[] args) throws IOException {
         DatagramSocket sendDs = new DatagramSocket();
-        DatagramSocket receiveDs = new DatagramSocket(10010);
+        DatagramSocket receiveDs = new DatagramSocket(10086);
 
         SendThread st = new SendThread(sendDs);
         ReceiveThread rt = new ReceiveThread(receiveDs);

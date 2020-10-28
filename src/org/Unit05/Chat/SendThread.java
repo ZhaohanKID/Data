@@ -24,20 +24,13 @@ public class SendThread implements Runnable {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String line = null;
             while ((line = br.readLine()) != null) {
-                if ("520".equals(line)) {
-                    byte[] bytes = line.getBytes();
-                    DatagramPacket dp = new DatagramPacket(bytes, bytes.length, InetAddress.getByName("192.168.1.3"), 10000);
-                    ds.send(dp);
-                    break;
-                }
                 byte[] bytes = line.getBytes();
-                DatagramPacket dp = new DatagramPacket(bytes, bytes.length, InetAddress.getByName("192.168.1.3"), 10010);
+                DatagramPacket dp = new DatagramPacket(bytes, bytes.length, InetAddress.getByName("192.168.2.109"), 10086);
                 ds.send(dp);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

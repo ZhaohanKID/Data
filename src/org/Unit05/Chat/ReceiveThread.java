@@ -3,6 +3,7 @@ package org.Unit05.Chat;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.InetAddress;
 
 /**
  * @Author: Z.HAN
@@ -26,7 +27,7 @@ public class ReceiveThread implements Runnable {
                 ds.receive(dp);
                 // 解析数据
                 String ip = dp.getAddress().getHostAddress();
-                System.out.println("从" + ip + "接收到的数据为:" + new String(dp.getData(), 0, dp.getLength()));
+                System.out.println(new String(dp.getData(), 0, dp.getLength()));
             }
         } catch (IOException e) {
             e.printStackTrace();
