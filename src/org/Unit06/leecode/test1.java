@@ -1,5 +1,7 @@
 package org.Unit06.leecode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -8,6 +10,7 @@ import java.util.Arrays;
  * @Date: 2020/11/2 20:59
  */
 public class test1 {
+
     public static void main(String[] args) {
         int[] nums1 = {1,2,2,1};
         int[] nums2 = {2,2};
